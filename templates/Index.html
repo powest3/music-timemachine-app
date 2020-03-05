@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<body lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Music Through the Years</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+
+    <!-- FROM DART: You need to add your own css sheet here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar -white">
+      <a class="navbar-brand" href="Index.html">
+
+        <h3 class="navbar-button">Home</h3></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav navbar-nav navbar ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-data" href="Machine.html">&nbsp; &nbsp; Probabilistic Lyric Generator &nbsp; &nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-comparison" href="Artist.html">Artists &emsp14;</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-data" href="Songs.html">&nbsp; &nbsp; Songs & Lyrics &nbsp; &nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-comparison" href="History.html">Historical Effects on Lyrics &emsp14;</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+
+
+
+
+    <div class="jumbotron-fluid">
+
+      <img src="{{ url_for('static', filename='images/music1.jpg') }}" , class="img-fluid"></img>
+
+
+
+
+      <h1 style="padding:0 500px"> Music Through the Years</h1>
+      <h2 style="padding:0 420px">An Analysis of #1 Hit Song Lyrics by Artist</h2>
+      <h7>Vectors courtesy of:</h7> <a href="https://www.vecteezy.com/"> Vectors by Vecteezy</a>
+
+    </div>
+
+    <br>
+    <br>
+
+    <h2> Overview</h2>
+    <br>
+
+    <h5> This site examines Billboard Hot 100 charts from 1958 until the current year and analyzes the lyrics and
+      artists of the top songs
+      to determine trends. &nbsp; Data was obtained by extracting song titles and lyrics, weeks spent at number 1 and artists. &nbsp;
+      Below
+      are brief descriptions of the key dimensions of our analysis. &nbsp; To further analyze any area, click on the relevant area of analysis below. &nbsp;
+      Alternately,
+      you can click on any item in the menu bar at the top of the page.</h5>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <h2 style="padding:0 550px">Summary of Visualizations</h2>
+    <br>
+    <br>
+    <br>
+
+    <div class="roundedbox-2">
+      
+        <a href="History.html"><span>Historical Effects on Lyrics - Analysis of whether or not major world events <br> &nbsp; &nbsp; had any effect on the lyrics of the top songs 
+          throughout the years. </span></a>
+           
+    </div>
+
+    <div class="roundedbox-2">
+      
+      <a href="Songs.html"><span>Songs & Lyrics - Sentiment analysis of the lyrics in top songs to determine <br> &nbsp; &nbsp; similarities between the lyrics of top songs.         throughout the years. </span></a>
+         
+  </div>
+
+  <div class="roundedbox-2">
+      
+    <a href="Artist.html"><span>Artists - Analysis of artists data to determine the profile of artistes with <br>  &nbsp; &nbsp; number one songs. 
+    </span></a>
+       
+</div>
+
+<div class="roundedbox-2">
+      
+  <a href="Machine.html"><span>Probabilistic Lyric Generator - Based on all the data analyzed, machine  learning <br> &nbsp; &nbsp; techniques were used 
+    to generate/predict the lyrics of typical songs for each decade. </span></a>
+     
+</div>
+
+
+
+    <!-- <div class="container">
+    
+      <div style="padding:0 200px" id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <img class="d-block w-100" src="{{ url_for('static', filename='images/music-a.jpg') }}"> -->
+    <!-- <a id="Chart1", href=""></a>
+        </div>
+        <br class="carousel-item">
+          <!-- <img class="d-block w-100" src="{{ url_for('static', filename='images/music-1g.jpg') }}"> -->
+    <!-- <a id="Chart2b", href=""></a>
+        </div>
+        <div class="carousel-item"> -->
+    <!-- <img class="d-block w-100" src="{{ url_for('static', filename='images/music-c.jpg') }}"> -->
+    <!-- <a id="Chart2", href=""></a>
+        </div>
+        <div class="carousel-item"> -->
+    <!-- <img class="d-block w-100" src="{{ url_for('static', filename='images/music-5a.jpg') }}"> -->
+    <!-- <a id="Chart4", href=""></a>
+        </div>
+      </div>
+    </div>
+    </div> -->
+
+
+    <!-- 
+    <h3 style="padding:0 400px;">Click on any of the icons below to start exploring <br>
+      <b<b><br>
+    </h3>
+    <a href><img style="padding:0 50px;"id="song" src="Song.png" , class="img-fluid"></img></a>
+    <a href><img id ="artist" src="Artist.png" , class="img-fluid"></img> </a>
+    <a href><img style="padding:0 75px;" id ="History" src="History.png" , class="img-fluid"></img></a>
+    <a href><img id ="artist1" src="artist1.png" , class="img-fluid"></img> </a>
+    <a href><img id ="artist2" src="artist2.png" , class="img-fluid"></img> </a>
+
+    <div class="row">
+      <h4 style="padding:0 90px;">Song Summary</h4>
+      <h4 style="padding:0 40px;">Artist Summary</h4>
+      <h4 style="padding:0 110px;">Historical Influence</h4>
+      <h4>Artist Comparison</h4>
+    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/logic2.js') }}"></script>
+
+
+
+
+
+  </br>
+
+  </div>
