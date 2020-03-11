@@ -128,44 +128,44 @@ def alldata():
     result = reduced_df.to_json(orient = "records")
     return (result)
 
-@app.route("/wordcloud")
-def wordcloud():
-    df60s = reduced_df[reduced_df['decade']=='60s']
-    comment_words =''
-# iterate through the csv file 
-    for val in df60s['lyrics']: 
+# @app.route("/wordcloud")
+# def wordcloud():
+#     df60s = reduced_df[reduced_df['decade']=='60s']
+#     comment_words =''
+# # iterate through the csv file 
+#     for val in df60s['lyrics']: 
       
-    # typecaste each val to string 
-        val = str(val) 
+#     # typecaste each val to string 
+#         val = str(val) 
   
-    # split the value 
-        tokens = val.split() 
+#     # split the value 
+#         tokens = val.split() 
       
-    # Converts each token into lowercase 
-        for i in range(len(tokens)): 
-            tokens[i] = tokens[i].lower() 
+#     # Converts each token into lowercase 
+#         for i in range(len(tokens)): 
+#             tokens[i] = tokens[i].lower() 
           
-        for words in tokens: 
-            comment_words = comment_words + words + ' '
+#         for words in tokens: 
+#             comment_words = comment_words + words + ' '
 
-    words = word_tokenize(comment_words)
+#     words = word_tokenize(comment_words)
 
-        # get stopwords
-    stop_words = set(stopwords.words('english'))
+#         # get stopwords
+#     stop_words = set(stopwords.words('english'))
 
-        # remove stopwords from our words list and also remove any word whose length is less than 3
-        # stopwords are commonly occuring words like is, am, are, they, some, etc.
-    words = [word for word in words if word not in stop_words and len(word) > 3]
+#         # remove stopwords from our words list and also remove any word whose length is less than 3
+#         # stopwords are commonly occuring words like is, am, are, they, some, etc.
+#     words = [word for word in words if word not in stop_words and len(word) > 3]
 
-        # now, get the words and their frequency
-    words_freq = Counter(words)
+#         # now, get the words and their frequency
+#     words_freq = Counter(words)
 
-        # JQCloud requires words in format {'text': 'sample', 'weight': '100'}
-        # so, lets convert out word_freq in the respective format
-    words_json = [{'word': word, 'weighted': count} for word, count in words_freq.items()]
-    newlist = sorted(words_json, key=lambda i: i['weighted'],reverse=True) 
-    finallist = newlist[:100]
-    return json.dumps(finallist)
+#         # JQCloud requires words in format {'text': 'sample', 'weight': '100'}
+#         # so, lets convert out word_freq in the respective format
+#     words_json = [{'word': word, 'weighted': count} for word, count in words_freq.items()]
+#     newlist = sorted(words_json, key=lambda i: i['weighted'],reverse=True) 
+#     finallist = newlist[:100]
+#     return json.dumps(finallist)
 # @app.route("/the1960s")
 # def artist_count_data_60s():
 #     df = pd.DataFrame(list(music.find()))
