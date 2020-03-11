@@ -22,7 +22,7 @@ import numpy as np #importing Numpy
 #from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer #initiating VADER instance
 
 import nltk
-nltk.download('vader_lexicon')
+#nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 app = Flask(__name__)
