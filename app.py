@@ -31,15 +31,28 @@ app = Flask(__name__)
 mongo = PyMongo(app, uri="mongodb://localhost:27017/billboard_db")
 music = mongo.db.all_number_one_songs
 
+print('---test---')
 
+
+test = music.find()
+
+for t in test:
+    print(t)
+
+
+
+print('---test---')
 
 analyser = SentimentIntensityAnalyzer()
 
 
 
 df = pd.DataFrame(list(music.find()))
-df2 = df.drop(['_id'], axis=1)
-reduced_df = df2.dropna(how='any')
+
+df.head()
+
+#df2 = df.drop(['_id'], axis=1)
+reduced_df = df.dropna(how='any')
 lyrics_index = reduced_df.set_index("lyrics")
 i=0 #counter
 
