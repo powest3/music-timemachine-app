@@ -28,7 +28,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 app = Flask(__name__)
 
 
-mongo = PyMongo(app, uri="mongodb://localhost:27017/billboard_db")
+mongo = PyMongo(app, uri="mongodb+srv://user:password12345@clustersongs-vtqfx.mongodb.net/test?authSource=admin&replicaSet=ClusterSongs-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true')
+")
 music = mongo.db.all_number_one_songs
 
 
