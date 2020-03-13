@@ -28,7 +28,7 @@ import numpy as np #importing Numpy
 app = Flask(__name__)
 
 
-mongo = PyMongo(app, uri="mongodb+srv://user:password12345@clustersongs-vtqfx.mongodb.net/test")
+mongo = PyMongo(app, uri="mongodb+srv://user:password12345@clustersongs-vtqfx.mongodb.net/test?retryWrites=true&w=majority")
 music = mongo.db.all_number_one_songs
 word = mongo.db.word_cloud_data
 
