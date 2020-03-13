@@ -70,6 +70,11 @@ def history():
 
     return render_template("History.html")
 
+@app.route("/Artist-60yrs.html")
+def Artist60():
+
+    return render_template("Artist-60yrs.html")
+
 
 
 @app.route("/alldata")
