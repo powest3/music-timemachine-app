@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Music Through the Years</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  <body>
+    <!-- Creates the Overall Grid -->
+
+    <nav class="navbar navbar-expand-lg navbar -white">
+      <a class="navbar-brand" href="Index.html">
+
+        <span class="navbar-button">Home</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav navbar-nav navbar ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-data" href="Machine.html">&nbsp; &nbsp; Probabilistic Lyric Generator &nbsp; &nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-comparison" href="Artist.html">Artists &emsp14;</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-data" href="Songs.html">&nbsp; &nbsp; Songs & Lyrics &nbsp; &nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-comparison" href="History.html">Historical Effects on Lyrics &emsp14;</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+
+
+
+
+
+    <div class="jumbotron-fluid">
+
+      <img src="{{ url_for('static', filename='images/music2.jpg') }}" , class="img-fluid"></img>
+
+
+
+
+      <h1 style="padding:0 500px"> Music Through the Years</h1>
+      <h2 style="padding:0 670px">Artists</h2>
+      <br>
+
+      <h7>Vectors courtesy of:</h7> <a href="https://www.vecteezy.com/"> Vectors by Vecteezy</a>
+
+    </div>
+    <br>
+
+    <!-- <div class="row">
+
+      <div class="col-md-5 col-sm-12">
+
+      </div>
+
+      <div class="col-md-5 col-sm-12">
+        <div class="dropdown-text-center">
+          <span>Choose the decade</span>
+          <select id="selDecade" onchange="optionChanged(this.value)">
+            <option value="1950">1950s</option>
+            <option value="1960">1960s</option>
+            <option value="1970">1970s</option>
+            <option value="1980">1980s</option>
+            <option value="1990">1990s</option>
+            <option value="2000">2000 - 2010</option>
+            <option value="2011">2010 to current</option>
+
+          </select>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br> -->
+
+
+
+
+
+    <div class="roundedbox">
+      <h2 style="padding:0 600px">Visualizations</h2>
+      <html>
+        <br>
+        <br>
+
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="box-content-3">
+
+          <div class='tableauPlaceholder' id='viz1583884283298' style='position: relative'><noscript><a href='#'><img
+            alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ar&#47;ArtistSummaryStatistics&#47;Dashboard1&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='ArtistSummaryStatistics&#47;Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ar&#47;ArtistSummaryStatistics&#47;Dashboard1&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='filter' value='publish=yes' /></object></div>
+    <script
+      type='text/javascript'>                    var divElement = document.getElementById('viz1583884283298'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '700px'; vizElement.style.maxWidth = '1500px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '700px'; vizElement.style.maxWidth = '1500px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+
+          <div class='tableauPlaceholder' id='viz1582925585289' style='position: relative'><noscript><a href='#'><img
+                  alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3X&#47;3XDWWB4CB&#47;1_rss.png'
+                  style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='path' value='shared&#47;3XDWWB4CB' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3X&#47;3XDWWB4CB&#47;1.png' />
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='filter' value='publish=yes' /></object></div>
+          <script
+            type='text/javascript'>                    var divElement = document.getElementById('viz1582925585289'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.minWidth = '620px'; vizElement.style.maxWidth = '1650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.minWidth = '620px'; vizElement.style.maxWidth = '1650px'; vizElement.style.width = '100%'; vizElement.style.minHeight = '587px'; vizElement.style.maxHeight = '887px'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+          <!-- <h2>Visualizations</h2> -->
+          <!-- <div class="row"> -->
+
+          <!-- <div id="Historical-Music-Charts"> -->
+
+          <!-- </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-content-2">
+          <br>
+          
+          <h5>The following historical events occurred during the decade selected.</h5>
+         <br>
+         <br>
+         
+          <div id="Chart1">
+                           
+         
+
+        </div> -->
+
+        <div class='tableauPlaceholder' id='viz1583000590410' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;79&#47;79GZCHZYG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;79GZCHZYG' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;79&#47;79GZCHZYG&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1583000590410');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+          <div id="HorizontalChart">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/logic2.js') }}"></script>
+
+  </body>
+
+</html>
