@@ -32,7 +32,7 @@ json5==0.8.4
 vaderSentiment==2.5
 numpy==1.16.4
 numpydoc==0.9.1
-nltk==3.4.4
+nltk==3.4.5
 pandas==0.24.2
 corpora==1.0
 dnspython==1.16.0
