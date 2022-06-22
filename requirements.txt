@@ -30,7 +30,7 @@ plotly==4.2.1
 pymongo==3.9.0
 json5==0.8.4
 vaderSentiment==2.5
-numpy==1.16.4
+numpy==1.22.0
 numpydoc==0.9.1
 nltk==3.4.4
 pandas==0.24.2
